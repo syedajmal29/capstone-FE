@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure smooth transition for sidebar */
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+/* Adjust content to not overlap with sidebar */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Add overlay styling */
+.fixed.inset-0.bg-gray-900.opacity-50 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
